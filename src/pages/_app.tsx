@@ -13,10 +13,11 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="user-scalable=no,width=device-width,initial-scale=1"
         />
-
         <title>jihyeon portfolio</title>
       </Head>
-      <Header />
+      <div className="main">
+        <Header />
+      </div>
       <Component {...pageProps} />
     </>
   );
