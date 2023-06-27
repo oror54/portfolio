@@ -5,6 +5,7 @@ import Image from "next/image";
 import AboutMe from "@/public/images/about.svg";
 import Project from "@/public/images/projects.svg";
 import Contact from "@/public/images/contact.svg";
+import type { AppProps } from "next/app";
 
 export default function Header() {
   return (
@@ -17,13 +18,13 @@ export default function Header() {
           </Link>
         </li>
         <li className={styles.menu}>
-          <Link href="/">
+          <Link href="/projects/">
             <Image src={Project} alt="project" />
             <p>project</p>
           </Link>
         </li>
         <li className={styles.menu}>
-          <Link href="/">
+          <Link href="/contact/">
             <Image src={Contact} alt="contact" />
             <p>contact</p>
           </Link>

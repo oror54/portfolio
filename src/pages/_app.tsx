@@ -2,6 +2,9 @@ import Header from "@/components/Header";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Image from "next/image";
+import profilePic from "@/public/images/jihyeon.png";
+import Intro from "./intro";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -15,10 +18,13 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <title>jihyeon portfolio</title>
       </Head>
-      <div className="main">
-        <Header />
+      <div className="wrap">
+        <div className="main">
+          <Intro />
+          <Header />
+        </div>
+        <Component {...pageProps} />
       </div>
-      <Component {...pageProps} />
     </>
   );
 }
