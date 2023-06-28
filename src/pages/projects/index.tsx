@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Head from "next/head";
+import projectSlider from "./Slick";
 import styles from "@/styles/page.module.scss";
 
 export default function index() {

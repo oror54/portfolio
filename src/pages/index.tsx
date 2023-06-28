@@ -84,7 +84,7 @@ export default function index() {
       <div className={styles.box}>
         <h3 className={styles.title}>publishing</h3>
         <div className={styles.skl_box}>
-          {designArray.map(renderPublishingArray)}
+          {PublishingArray.map(renderPublishingArray)}
         </div>
       </div>
     </div>
