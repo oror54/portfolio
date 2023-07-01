@@ -218,3 +218,13 @@ body {
         }
     }
 }
+
+.ProjectSlide {
+    .swiper-wrapper {
+        display: flex;
+
+        .swiper_slide {
+            width: 600px;
+        }
+    }
+}

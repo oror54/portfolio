@@ -1,6 +1,5 @@
 import ProjectSlide from "./Swiper";
 import styles from "@/styles/page.module.scss";
-
 /* Constants =========================================================== */
 /* Prop =========================================================== */
 type Prop = {};
