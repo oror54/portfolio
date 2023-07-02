@@ -39,6 +39,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --swiper-theme-color: #555555 !important;
+}
+
 html,
 body,
 div,
@@ -217,14 +221,14 @@ body {
             }
         }
     }
-}
 
-.ProjectSlide {
-    .swiper-wrapper {
-        display: flex;
+    .ProjectSlide {
+        .swiper-wrapper {
+            display: flex;
 
-        .swiper_slide {
-            width: 600px;
+            .swiper_slide {
+                width: 100%;
+            }
         }
     }
 }

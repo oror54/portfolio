@@ -9,9 +9,7 @@ export default function index() {
     <div className={styles.pageBox}>
       <div className={styles.box}>
         <h3 className={styles.title}>projects</h3>
-        <div>
-          <ProjectSlide />
-        </div>
+        <ProjectSlide />
       </div>
     </div>
   );

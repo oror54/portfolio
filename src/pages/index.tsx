@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Head from "next/head";
 import styles from "@/styles/page.module.scss";
+
+/* 스킬 이미지 =========================================================== */
 import phtoshop from "@/public/images/Photoshop.png";
 import illustrator from "@/public/images/Illustrator.png";
 import dreamweaver from "@/public/images/Dreamweaver.png";
