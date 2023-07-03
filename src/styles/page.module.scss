@@ -98,3 +98,14 @@
     }
 
 }
+
+
+@media (min-width: 1024px) {}
+
+@media (max-width: 768px) {
+    .pageBox {
+        width: 100%;
+        height: 100%;
+    }
+
+}

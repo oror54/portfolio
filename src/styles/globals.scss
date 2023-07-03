@@ -232,3 +232,48 @@ body {
         }
     }
 }
+
+@media (min-width: 1024px) {}
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px
+    }
+
+    .wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .intro {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 30px;
+                padding: 30px;
+
+                .txt_box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    ;
+}
+
+@media (min-width: 640) {}
