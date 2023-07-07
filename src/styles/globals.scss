@@ -276,4 +276,30 @@ body {
     ;
 }
 
-@media (min-width: 640) {}
+@media (max-width: 425px) {
+    .wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .intro {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 30px;
+                padding: 0 0 30px 0;
+            }
+        }
+    }
+
+}
