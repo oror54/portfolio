@@ -15,7 +15,6 @@ type projectDetailProp = {
 };
 /* <projectDetail/> =========================================================== */
 export default function projectDetail() {
-  const router = useRouter();
   return (
     <div className={styles.pageBox}>
       <div className={styles.box}>
