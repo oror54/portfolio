@@ -23,7 +23,7 @@ import { Route, Routes } from "react-router-dom";
 /* Prop =========================================================== */
 type Prop = {};
 type ProjectProp = {
-  id: number | string;
+  id: string | undefined;
   image: any;
   title: string;
   date: any;
