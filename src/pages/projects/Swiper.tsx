@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper"; // 추가
 import "swiper/swiper-bundle.min.css";
@@ -18,6 +18,7 @@ import project07 from "@/public/images/project07.jpg";
 import project08 from "@/public/images/project08.jpg";
 import project09 from "@/public/images/project09.jpg";
 import project10 from "@/public/images/project10.jpg";
+import { Route, Routes } from "react-router-dom";
 /* Constants =========================================================== */
 /* Prop =========================================================== */
 type Prop = {};
@@ -28,8 +29,11 @@ type ProjectProp = {
   date: any;
   text: any;
 };
+
 /* <ProjectList/> =========================================================== */
 export default function ProjectSlide({}) {
+  const router = useRouter();
+  console.log(router);
   SwiperCore.use([Navigation, Pagination, Autoplay]);
   const projectArray: ProjectProp[] = [
     {
@@ -122,12 +126,13 @@ export default function ProjectSlide({}) {
     },
   ];
   const renderProjectAraay = (item: ProjectProp, index: number) => {
-    const router = useRouter();
     return (
       <SwiperSlide key={index} className="swiper_slide">
         <div className={styles.projects_wrap}>
-          <div className={styles.image}>
-            <Link href={{ pathname: "/view/${item.id}" }}>{item.image}</Link>
+          <div className={styles.image} id={item.id}>
+            <Link href={{ pathname: "/projects/[id]", query: { id: item.id } }}>
+              {item.image}
+            </Link>
           </div>
           <div className={styles.content}>
             <div className={styles.title}>{item.title}</div>
