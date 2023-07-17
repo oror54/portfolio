@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/project.module.scss";
 import { useRouter } from "next/router";
+import { MongoClient } from "mongodb";
 /* 프로젝트 이미지 =========================================================== */
 import project01 from "@/public/images/project01.jpg";
 import project02 from "@/public/images/project02.jpg";
