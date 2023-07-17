@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
 import { MongoClient } from "mongodb";
 import styles from "@/styles/page.module.scss";
-import projectView from "./view";
 /* Constants =========================================================== */
 /* Prop =========================================================== */
 type Prop = {};
