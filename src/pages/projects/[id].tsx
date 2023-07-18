@@ -1,20 +1,26 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
+import Image from "next/image";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import { ParsedUrlQuery } from "querystring";
-import { MongoClient } from "mongodb";
 import styles from "@/styles/page.module.scss";
 /* Constants =========================================================== */
+import projectDetail01 from "@/public/images/projectdetail01.jpg";
+import { time } from "console";
 /* Prop =========================================================== */
 type Prop = {};
 type projectDetailProps = {
   id: string | undefined;
+  title: string;
+  content: any;
+  url: any;
 };
 /* <projectDetail/> =========================================================== */
+
 const ProjectDetail: NextPage<projectDetailProps> = (props) => {
-  const { id } = props;
+  const { id, title, content, url } = props;
   const router = useRouter();
   if (router.isFallback) {
     return <div>로딩중</div>;
@@ -32,7 +38,12 @@ const ProjectDetail: NextPage<projectDetailProps> = (props) => {
           </button>
         </h3>
       </div>
-      <>{id}</>
+      <>
+        {id}
+        {title}
+        {content}
+        {url}
+      </>
     </div>
   );
 };
@@ -94,6 +105,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 interface projectParams extends ParsedUrlQuery {
   id: string;
+  title: string;
 }
 
 export const getStaticProps: GetStaticProps<
@@ -101,9 +113,7 @@ export const getStaticProps: GetStaticProps<
   projectParams
 > = async (context) => {
   return {
-    props: {
-      id: context.params!["id"],
-    },
+    props: { id: context.params!["id"], title: "", content: "", url: "" },
   };
 };
 export default ProjectDetail;

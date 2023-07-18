@@ -7,7 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/project.module.scss";
 import { useRouter } from "next/router";
-import { MongoClient } from "mongodb";
 /* 프로젝트 이미지 =========================================================== */
 import project01 from "@/public/images/project01.jpg";
 import project02 from "@/public/images/project02.jpg";
@@ -29,6 +28,7 @@ type ProjectProp = {
   title: string;
   date: any;
   text: any;
+  url: string;
 };
 
 /* <ProjectList/> =========================================================== */
@@ -45,6 +45,7 @@ export default function ProjectSlide({}) {
       title: "오십견각도계",
       date: <>2021. 11</>,
       text: <div>UX/UI 디자인 및 관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project01",
     },
     {
       id: "2",
@@ -54,6 +55,7 @@ export default function ProjectSlide({}) {
       title: "솔루션페이지",
       date: <>2021. 12</>,
       text: <div>회사 솔루션 페이지 퍼블리싱</div>,
+      url: "/projects/view/project02",
     },
     {
       id: "3",
@@ -61,6 +63,7 @@ export default function ProjectSlide({}) {
       title: "기술장인",
       date: <>2021. 01</>,
       text: <div>UX/UI 디자인 및 관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project03",
     },
     {
       id: "4",
@@ -70,6 +73,7 @@ export default function ProjectSlide({}) {
       title: "건물임대관리",
       date: <>2021. 02</>,
       text: <div>UX/UI 디자인 및 웹앱, 관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project04",
     },
     {
       id: "5",
@@ -79,6 +83,7 @@ export default function ProjectSlide({}) {
       title: "장보고배송",
       date: <>2021. 03</>,
       text: <div>UX/UI 디자인 및 관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project05",
     },
     {
       id: "6",
@@ -88,6 +93,7 @@ export default function ProjectSlide({}) {
       title: "동네의영웅",
       date: <>2021. 04</>,
       text: <div>웹앱, 관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project05",
     },
     {
       id: "7",
@@ -95,6 +101,7 @@ export default function ProjectSlide({}) {
       title: "홀리데이",
       date: <>2021. 05</>,
       text: <div>UX/UI 디자인, 관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project07",
     },
     {
       id: "8",
@@ -106,6 +113,7 @@ export default function ProjectSlide({}) {
           UX/UI 디자인 및 관리자 페이지 퍼블리싱, 랜딩페이지 디자인 및 퍼블리싱
         </div>
       ),
+      url: "/projects/view/project08",
     },
     {
       id: "9",
@@ -115,6 +123,7 @@ export default function ProjectSlide({}) {
       title: "체질의민족",
       date: <>2021. 10</>,
       text: <div>관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project09",
     },
     {
       id: "10",
@@ -124,6 +133,7 @@ export default function ProjectSlide({}) {
       title: "모델에이전시",
       date: <>2021. 11</>,
       text: <div>UX/UI 디자인, 관리자 페이지 퍼블리싱</div>,
+      url: "/projects/view/project10",
     },
   ];
   const renderProjectAraay = (item: ProjectProp, index: number) => {
@@ -131,9 +141,7 @@ export default function ProjectSlide({}) {
       <SwiperSlide key={index} className="swiper_slide">
         <div className={styles.projects_wrap}>
           <div className={styles.image} id={item.id}>
-            <Link href={{ pathname: "/projects/[id]", query: { id: item.id } }}>
-              {item.image}
-            </Link>
+            <Link href={item.url}>{item.image}</Link>
           </div>
           <div className={styles.content}>
             <div className={styles.title}>{item.title}</div>
