@@ -25,7 +25,13 @@ export default function Header() {
         <li className={styles.menu}>
           <Link
             href={"/projects"}
-            className={router.pathname === "/projects" ? styles.active : ""}
+            className={
+              router.pathname === "/projects"
+                ? styles.active
+                : "" && router.pathname === "/projects/view"
+                ? styles.active
+                : ""
+            }
           >
             <Image src={Project} alt="project" />
             <p>project</p>
