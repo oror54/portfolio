@@ -39,9 +39,7 @@ export default function ProjectSlide({}) {
   const projectArray: ProjectProp[] = [
     {
       id: "1",
-      image: (
-        <Image src={project01} alt="오십견각도계" width={350} height={450} />
-      ),
+      image: <Image src={project01} alt="오십견각도계" />,
       title: "오십견각도계",
       date: <>2021. 11</>,
       text: <div>UX/UI 디자인 및 관리자 페이지 퍼블리싱</div>,
@@ -49,9 +47,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "2",
-      image: (
-        <Image src={project02} alt="솔루션페이지" width={350} height={450} />
-      ),
+      image: <Image src={project02} alt="솔루션페이지" />,
       title: "솔루션페이지",
       date: <>2021. 12</>,
       text: <div>회사 솔루션 페이지 퍼블리싱</div>,
@@ -59,7 +55,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "3",
-      image: <Image src={project03} alt="기술장인" width={350} height={450} />,
+      image: <Image src={project03} alt="기술장인" />,
       title: "기술장인",
       date: <>2021. 01</>,
       text: <div>UX/UI 디자인 및 관리자 페이지 퍼블리싱</div>,
@@ -67,9 +63,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "4",
-      image: (
-        <Image src={project04} alt="건물임대관리" width={350} height={450} />
-      ),
+      image: <Image src={project04} alt="건물임대관리" />,
       title: "건물임대관리",
       date: <>2021. 02</>,
       text: <div>UX/UI 디자인 및 웹앱, 관리자 페이지 퍼블리싱</div>,
@@ -77,9 +71,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "5",
-      image: (
-        <Image src={project05} alt="장보고배송" width={350} height={450} />
-      ),
+      image: <Image src={project05} alt="장보고배송" />,
       title: "장보고배송",
       date: <>2021. 03</>,
       text: <div>UX/UI 디자인 및 관리자 페이지 퍼블리싱</div>,
@@ -87,9 +79,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "6",
-      image: (
-        <Image src={project06} alt="동네의영웅" width={350} height={450} />
-      ),
+      image: <Image src={project06} alt="동네의영웅" />,
       title: "동네의영웅",
       date: <>2021. 04</>,
       text: <div>웹앱, 관리자 페이지 퍼블리싱</div>,
@@ -97,7 +87,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "7",
-      image: <Image src={project07} alt="홀리데이" width={350} height={450} />,
+      image: <Image src={project07} alt="홀리데이" />,
       title: "홀리데이",
       date: <>2021. 05</>,
       text: <div>UX/UI 디자인, 관리자 페이지 퍼블리싱</div>,
@@ -105,7 +95,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "8",
-      image: <Image src={project08} alt="씨플러스" width={350} height={450} />,
+      image: <Image src={project08} alt="씨플러스" />,
       title: "씨플러스",
       date: <>2021. 08</>,
       text: (
@@ -117,9 +107,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "9",
-      image: (
-        <Image src={project09} alt="체질의민족" width={350} height={450} />
-      ),
+      image: <Image src={project09} alt="체질의민족" />,
       title: "체질의민족",
       date: <>2021. 10</>,
       text: <div>관리자 페이지 퍼블리싱</div>,
@@ -127,9 +115,7 @@ export default function ProjectSlide({}) {
     },
     {
       id: "10",
-      image: (
-        <Image src={project10} alt="모델에이전시" width={350} height={450} />
-      ),
+      image: <Image src={project10} alt="모델에이전시" />,
       title: "모델에이전시",
       date: <>2021. 11</>,
       text: <div>UX/UI 디자인, 관리자 페이지 퍼블리싱</div>,

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "@/styles/page.module.scss";
 /* Constants =========================================================== */
-import projectDetail01 from "@/public/images/projectdetail01.jpg";
+import projectDetail08 from "@/public/images/projectdetail08.png";
 /* Prop =========================================================== */
 type Prop = {};
 type projectDetailProps = {
@@ -28,7 +28,27 @@ export default function ProjectDetail() {
           </button>
         </h3>
       </div>
-      <></>
+      <div className={styles.detail}>
+        <div className={styles.title}>케어플러스</div>
+        <Image
+          src={projectDetail08}
+          alt="케어플러스"
+          className={styles.projectImage}
+        />
+        <div className={styles.content}>
+          간병인을 찾는 보호자와 일감을 찾는 간병인을 매칭시켜주는 플랫폼으로
+          보호자가 올린 간병정보를 바탕으로 간병인들이 견적을 발행하여 보호자가
+          결제를 하면 매칭이 이루어 지는 서비스로 전체적인 UX/UI 디자인과 관리자
+          랜딩페이지 퍼블리싱을 맡아 프로젝트를 진행하였습니다.
+        </div>
+        <Link
+          href="http://careplus.design.pm5.kr/landing/"
+          className={styles.link}
+          target="_blank"
+        >
+          랜딩페이지 보러가기
+        </Link>
+      </div>
     </div>
   );
 }

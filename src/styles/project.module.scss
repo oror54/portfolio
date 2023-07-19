@@ -13,6 +13,11 @@
             img {
                 border-radius: 30px;
                 box-shadow: 10px 10px 30px #8b8b8b70;
+                min-width: auto;
+                min-height: 500px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
@@ -41,3 +46,26 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .Swiper_Wrap {
+        width: 100%;
+        height: 100%;
+
+        .projects_wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            gap: 30px;
+
+            .image {
+                img {
+                    min-height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {}
