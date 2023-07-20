@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AboutMe from "@/public/images/about.svg";
 import Project from "@/public/images/projects.svg";
-import Contact from "@/public/images/contact.svg";
+import Blog from "@/public/images/blog.svg";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 
@@ -39,11 +39,11 @@ export default function Header() {
         </li>
         <li className={styles.menu}>
           <Link
-            href={"/contact"}
-            className={router.pathname === "/contact" ? styles.active : ""}
+            href={"/blog"}
+            className={router.pathname === "/blog" ? styles.active : ""}
           >
-            <Image src={Contact} alt="contact" />
-            <p>contact</p>
+            <Image src={Blog} alt="blog" />
+            <p>blog</p>
           </Link>
         </li>
       </ul>

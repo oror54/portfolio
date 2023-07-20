@@ -26,6 +26,7 @@
                 color: inherit;
                 cursor: pointer;
                 position: relative;
+                transition: all 0.3s;
 
                 image {
                     width: 30px;
@@ -40,27 +41,26 @@
             }
 
             a:hover::before {
-                content: '';
-                width: 15px;
-                height: 15px;
+                content: "";
+                width: 70px;
+                height: 80px;
                 border-radius: 50px;
-                background-color: #e1dc83;
+                background-color: #CAD39050;
                 position: absolute;
                 z-index: -1;
-                top: 0;
-                box-shadow: 0 0 30px 30px #e1dc83;
+                bottom: -13px;
+                transition: all 0.3s;
             }
 
             a.active::before {
-                content: '';
-                width: 15px;
-                height: 15px;
+                content: "";
+                width: 70px;
+                height: 80px;
                 border-radius: 50px;
                 background-color: #CAD390;
                 position: absolute;
                 z-index: -1;
-                top: 0;
-                box-shadow: 0 0 30px 30px #CAD390;
+                bottom: -13px;
             }
         }
     }

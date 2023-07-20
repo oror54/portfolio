@@ -6,7 +6,16 @@ import styles from "@/styles/page.module.scss";
 type Prop = {};
 
 export default function index() {
-  return <div className={styles.pageBox}></div>;
+  return (
+    <div className={styles.pageBox}>
+      <div className={styles.box}>
+        <h3 className={styles.title}>blog</h3>
+        <div className={styles.bolg_content}>
+          <b>준비중입니다</b>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 index.defaultProps = {};
