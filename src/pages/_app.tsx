@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <div className="wrap">
         <div className="main">
-          <IntroAnimation clssName="intro_ani" />
+          <IntroAnimation />
           <Intro />
           <Header />
         </div>
