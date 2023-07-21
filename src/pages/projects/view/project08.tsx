@@ -13,18 +13,19 @@ type projectDetailProps = {
   url: any;
 };
 /* <projectDetail/> */
-export default function ProjectDetail() {
+export default function ProjectDetail08() {
   const router = useRouter();
   return (
     <div className={styles.pageBox}>
-      <div className={styles.box}>
+      <div className={styles.box_detail}>
         <h3 className={styles.title}>
           <button
+            className={styles.back_btn}
             onClick={() => {
               router.back();
             }}
           >
-            목록으로
+            프로젝트 목록으로
           </button>
         </h3>
       </div>
@@ -34,6 +35,8 @@ export default function ProjectDetail() {
           src={projectDetail08}
           alt="케어플러스"
           className={styles.projectImage}
+          placeholder="blur"
+          blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNcUQ8AAdUBKRs/oNkAAAAASUVORK5CYII="
         />
         <div className={styles.content}>
           간병인을 찾는 보호자와 일감을 찾는 간병인을 매칭시켜주는 플랫폼으로
@@ -42,8 +45,15 @@ export default function ProjectDetail() {
           랜딩페이지 퍼블리싱을 맡아 프로젝트를 진행하였습니다.
         </div>
         <Link
+          href="http://careplus.design.pm5.kr/admin/login/"
+          className={`${styles.link} ${styles.btn1}`}
+          target="_blank"
+        >
+          관리자페이지 보러가기
+        </Link>
+        <Link
           href="http://careplus.design.pm5.kr/landing/"
-          className={styles.link}
+          className={`${styles.link} ${styles.btn2}`}
           target="_blank"
         >
           랜딩페이지 보러가기
@@ -53,4 +63,4 @@ export default function ProjectDetail() {
   );
 }
 
-ProjectDetail.defaultProps = {};
+ProjectDetail08.defaultProps = {};

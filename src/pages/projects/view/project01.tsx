@@ -13,18 +13,19 @@ type projectDetailProps = {
   url: any;
 };
 /* <projectDetail/> */
-export default function ProjectDetail() {
+export default function ProjectDetail01() {
   const router = useRouter();
   return (
     <div className={styles.pageBox}>
-      <div className={styles.box}>
+      <div className={styles.box_detail}>
         <h3 className={styles.title}>
           <button
+            className={styles.back_btn}
             onClick={() => {
               router.back();
             }}
           >
-            목록으로
+            프로젝트 목록으로
           </button>
         </h3>
       </div>
@@ -34,6 +35,8 @@ export default function ProjectDetail() {
           src={projectDetail01}
           alt="오십견각도계"
           className={styles.projectImage}
+          placeholder="blur"
+          blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNcUQ8AAdUBKRs/oNkAAAAASUVORK5CYII="
         />
         <div className={styles.content}>
           핸드폰으로 간편하게 어깨 관절 각도를 측정하여 오십견 진단을 해볼 수
@@ -42,7 +45,7 @@ export default function ProjectDetail() {
         </div>
         <Link
           href="http://zinsim.design.pm5.kr/admin/login/"
-          className={styles.link}
+          className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
           관리자페이지 보러가기
@@ -52,4 +55,4 @@ export default function ProjectDetail() {
   );
 }
 
-ProjectDetail.defaultProps = {};
+ProjectDetail01.defaultProps = {};

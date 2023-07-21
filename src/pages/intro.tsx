@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "@/public/images/jihyeon.png";
-
 export default function Intro() {
   return (
     <div className="intro">

@@ -3,7 +3,7 @@ import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "@/public/images/jihyeon.png";
+import IntroAnimation from "@/components/animation";
 import Intro from "./intro";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -20,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <div className="wrap">
         <div className="main">
+          <IntroAnimation clssName="intro_ani" />
           <Intro />
           <Header />
         </div>

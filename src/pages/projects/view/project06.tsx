@@ -13,18 +13,19 @@ type projectDetailProps = {
   url: any;
 };
 /* <projectDetail/> */
-export default function ProjectDetail() {
+export default function ProjectDetail06() {
   const router = useRouter();
   return (
     <div className={styles.pageBox}>
-      <div className={styles.box}>
+      <div className={styles.box_detail}>
         <h3 className={styles.title}>
           <button
+            className={styles.back_btn}
             onClick={() => {
               router.back();
             }}
           >
-            목록으로
+            프로젝트 목록으로
           </button>
         </h3>
       </div>
@@ -41,14 +42,14 @@ export default function ProjectDetail() {
         </div>
         <Link
           href="http://townage.design.pm5.kr/admin/login/"
-          className={styles.link}
+          className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
           관리자페이지 보러가기
         </Link>
         <Link
           href="https://www.townage.co.kr/"
-          className={styles.link}
+          className={`${styles.link} ${styles.btn2}`}
           target="_blank"
         >
           앱 페이지 보러가기
@@ -58,4 +59,4 @@ export default function ProjectDetail() {
   );
 }
 
-ProjectDetail.defaultProps = {};
+ProjectDetail06.defaultProps = {};

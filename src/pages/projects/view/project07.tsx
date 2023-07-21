@@ -13,18 +13,19 @@ type projectDetailProps = {
   url: any;
 };
 /* <projectDetail/> */
-export default function ProjectDetail() {
+export default function ProjectDetail07() {
   const router = useRouter();
   return (
     <div className={styles.pageBox}>
-      <div className={styles.box}>
+      <div className={styles.box_detail}>
         <h3 className={styles.title}>
           <button
+            className={styles.back_btn}
             onClick={() => {
               router.back();
             }}
           >
-            목록으로
+            프로젝트 목록으로
           </button>
         </h3>
       </div>
@@ -34,6 +35,8 @@ export default function ProjectDetail() {
           src={projectDetail07}
           alt="홀리데이"
           className={styles.projectImage}
+          placeholder="blur"
+          blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNcUQ8AAdUBKRs/oNkAAAAASUVORK5CYII="
         />
         <div className={styles.content}>
           위치 기반으로 내 주위에 있는 맛집, 카페, 놀이시설 등 광고 영상을
@@ -42,7 +45,7 @@ export default function ProjectDetail() {
         </div>
         <Link
           href="http://holiday.design.pm5.kr/admin/login/"
-          className={styles.link}
+          className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
           관리자페이지 보러가기
@@ -52,4 +55,4 @@ export default function ProjectDetail() {
   );
 }
 
-ProjectDetail.defaultProps = {};
+ProjectDetail07.defaultProps = {};

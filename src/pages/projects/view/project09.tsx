@@ -13,18 +13,19 @@ type projectDetailProps = {
   url: any;
 };
 /* <projectDetail/> */
-export default function ProjectDetail() {
+export default function ProjectDetail09() {
   const router = useRouter();
   return (
     <div className={styles.pageBox}>
-      <div className={styles.box}>
+      <div className={styles.box_detail}>
         <h3 className={styles.title}>
           <button
+            className={styles.back_btn}
             onClick={() => {
               router.back();
             }}
           >
-            목록으로
+            프로젝트 목록으로
           </button>
         </h3>
       </div>
@@ -34,6 +35,8 @@ export default function ProjectDetail() {
           src={projectDetail09}
           alt="체질의민족"
           className={styles.projectImage}
+          placeholder="blur"
+          blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNcUQ8AAdUBKRs/oNkAAAAASUVORK5CYII="
         />
         <div className={styles.content}>
           카메라를 통한 안면인식과 설문을 통해 체질을 진단하고 콘텐츠를
@@ -42,7 +45,7 @@ export default function ProjectDetail() {
         </div>
         <Link
           href="http://kcare.design.pm5.kr/admin/login/"
-          className={styles.link}
+          className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
           관리자페이지 보러가기
@@ -52,4 +55,4 @@ export default function ProjectDetail() {
   );
 }
 
-ProjectDetail.defaultProps = {};
+ProjectDetail09.defaultProps = {};

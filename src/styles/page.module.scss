@@ -98,6 +98,28 @@
         }
     }
 
+    .box_detail {
+        position: fixed;
+
+        .title {
+            .back_btn {
+                padding: 10px;
+                border-radius: 25px;
+                border: none;
+                cursor: pointer;
+                background-color: #CAD390;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+                font-family: 'KBO-Dia-Gothic_medium';
+                transition: all 0.3s;
+                color: #333;
+            }
+
+            .back_btn:hover {
+                background-color: #A9B851;
+            }
+        }
+    }
+
     .detail {
         display: flex;
         flex-direction: column;
@@ -123,15 +145,30 @@
         }
 
         .link {
-            font-family: 'KBO-Dia-Gothic_bold';
+            font-family: 'KBO-Dia-Gothic_medium';
             font-size: 0.9rem;
             text-decoration: none;
             color: #333;
+            padding: 10px 20px;
+            border-radius: 25px;
         }
 
-        .link:hover {
-            color: #A9B851;
+        .btn1 {
+            background-color: #e7eeb6;
         }
+
+        .btn1:hover {
+            background-color: #b7bf85;
+        }
+
+        .btn2 {
+            background-color: #fff297;
+        }
+
+        .btn2:hover {
+            background-color: #FFE349;
+        }
+
     }
 
     .bolg_content {
