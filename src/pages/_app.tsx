@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import IntroAnimation from "@/components/animation";
 import Intro from "./intro";
-
+import favicon from "@/public/favicon.ico";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="user-scalable=no,width=device-width,initial-scale=1"
         />
         <title>jihyeon portfolio</title>
-        <link rel="icon" href="/public/favicon.ico" />
+        <link rel="ishortcut icon" href={favicon.src} type="image/x-icon" />
       </Head>
       <div className="wrap">
         <div className="main">
