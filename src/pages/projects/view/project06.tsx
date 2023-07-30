@@ -45,14 +45,7 @@ export default function ProjectDetail06() {
           className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
-          관리자페이지 보러가기
-        </Link>
-        <Link
-          href="https://www.townage.co.kr/"
-          className={`${styles.link} ${styles.btn2}`}
-          target="_blank"
-        >
-          앱 페이지 보러가기
+          보러가기
         </Link>
       </div>
     </div>

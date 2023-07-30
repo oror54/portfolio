@@ -44,11 +44,11 @@ export default function ProjectDetail07() {
           맡아 프로젝트를 진행하였습니다.
         </div>
         <Link
-          href="http://holiday.design.pm5.kr/admin/login/"
+          href="https://bandeuthan.com/portfolio/view.html?goPage=1&refType=&idx=1449&keyword="
           className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
-          관리자페이지 보러가기
+          보러가기
         </Link>
       </div>
     </div>

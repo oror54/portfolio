@@ -43,11 +43,11 @@ export default function ProjectDetail10() {
           페이지 퍼블리싱을 맡아 프로젝트를 진행하였습니다.
         </div>
         <Link
-          href="http://leaders.design.pm5.kr/admin/login/"
+          href="https://bandeuthan.com/portfolio/view.html?goPage=1&refType=&idx=1425&keyword="
           className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
-          관리자페이지 보러가기
+          보러가기
         </Link>
       </div>
     </div>

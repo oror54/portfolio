@@ -43,7 +43,7 @@ export default function ProjectDetail03() {
           페이지 퍼블리싱을 맡아 프로젝트를 진행하였습니다.
         </div>
         <Link
-          href="http://techmaster.design.pm5.kr/admin/login/"
+          href="https://bandeuthan.com/portfolio/view.html?goPage=2&refType=&idx=1364&keyword="
           className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >

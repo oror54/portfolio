@@ -44,7 +44,7 @@ export default function ProjectDetail05() {
           페이지 퍼블리싱을 맡아 프로젝트를 진행하였습니다.
         </div>
         <Link
-          href="http://jangbogo.design.pm5.kr/admin/login/login.html"
+          href="https://bandeuthan.com/portfolio/view.html?goPage=2&refType=&idx=1395&keyword="
           className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >

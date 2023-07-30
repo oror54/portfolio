@@ -44,11 +44,11 @@ export default function ProjectDetail09() {
           진행하였습니다.
         </div>
         <Link
-          href="http://kcare.design.pm5.kr/admin/login/"
+          href=""
           className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
-          관리자페이지 보러가기
+          보러가기
         </Link>
       </div>
     </div>
