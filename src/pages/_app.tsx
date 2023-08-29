@@ -5,21 +5,21 @@ import Head from "next/head";
 import IntroAnimation from "@/components/animation";
 import Intro from "./intro";
 import favicon from "@/public/favicon.ico";
-import OGIMAGE from "@/public/jihyeon_portfolio.png";
+import imageUrl from "@/public/images/jihyeon_portfolio.png";
 
 export default function App({ Component, pageProps }: AppProps) {
+  let hostUrl = "https://jihyeon.vercel.app/";
+  let myImage = `${hostUrl}${imageUrl}`;
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="홍지현 포트폴리오" />
+        <meta property="og:description" content="웹디자이너, 웹퍼블리셔" />
         <meta property="og:url" content="https://jihyeon.vercel.app/" />
-        <meta property="og:image" content={`${OGIMAGE}`} />
-        <meta
-          property="og:description"
-          content="웹디자이너, 웹퍼블리셔 홍지현 포트폴리오입니다"
-        />
+        <meta property="og:image" content={myImage} />
         <meta
           name="viewport"
           content="user-scalable=no,width=device-width,initial-scale=1"
