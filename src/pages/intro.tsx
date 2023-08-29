@@ -15,9 +15,7 @@ export default function Intro() {
       </div>
       <div className="txt_box">
         <div className="tit">안녕하세요:-&#41;</div>
-        <div className="text">
-          프론트엔드 개발자를 꿈꾸는 웹디자이너, 웹 퍼블리셔 홍지현입니다.
-        </div>
+        <div className="text">웹디자이너, 웹 퍼블리셔 홍지현입니다.</div>
         <div className="text">
           최적의 사용자 경험을 고려한 트랜디한 디자인으로 상상을 실현해 낼 수
           있도록 항상 최선을 다하고 있습니다.
