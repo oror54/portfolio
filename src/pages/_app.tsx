@@ -8,8 +8,6 @@ import favicon from "@/public/favicon.ico";
 import imageUrl from "@/public/images/jihyeon_portfolio.png";
 
 export default function App({ Component, pageProps }: AppProps) {
-  let hostUrl = "https://portpolio-oror54.vercel.app/";
-  let myImage = `${hostUrl}${imageUrl}`;
   return (
     <>
       <Head>
@@ -18,10 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="홍지현 포트폴리오" />
         <meta property="og:description" content="웹디자이너, 웹퍼블리셔" />
-        <meta
-          property="og:url"
-          content="https://portpolio-oror54.vercel.app/"
-        />
+        <meta property="og:url" content="https://jihyeon.vercel.app/" />
         <meta
           property="og:image"
           content="https://jihyeon.vercel.app/public/images/jihyeon_portfolio.png"
