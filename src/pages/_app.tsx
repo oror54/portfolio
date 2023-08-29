@@ -22,7 +22,10 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:url"
           content="https://portpolio-oror54.vercel.app/"
         />
-        <meta property="og:image" content={myImage} />
+        <meta
+          property="og:image"
+          content="https://jihyeon.vercel.app/public/images/jihyeon_portfolio.png"
+        />
         <meta
           name="viewport"
           content="user-scalable=no,width=device-width,initial-scale=1"
