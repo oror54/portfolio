@@ -8,7 +8,7 @@ import favicon from "@/public/favicon.ico";
 import imageUrl from "@/public/images/jihyeon_portfolio.png";
 
 export default function App({ Component, pageProps }: AppProps) {
-  let hostUrl = "https://jihyeon.vercel.app/";
+  let hostUrl = "https://portpolio-dlvpt3vup-oror54.vercel.app/";
   let myImage = `${hostUrl}${imageUrl}`;
   return (
     <>
