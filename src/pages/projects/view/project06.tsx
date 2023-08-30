@@ -41,7 +41,7 @@ export default function ProjectDetail06() {
           퍼블리싱과 관리자페이지 유지보수 퍼블리싱을 맡아 작업하였습니다.
         </div>
         <Link
-          href="http://townage.design.pm5.kr/admin/login/"
+          href="https://www.townage.co.kr/"
           className={`${styles.link} ${styles.btn1}`}
           target="_blank"
         >
