@@ -125,7 +125,7 @@ export default function ProjectSlide({}) {
       title: "동네의영웅",
       date: <>2021. 04</>,
       text: <div>웹앱, 관리자 페이지 퍼블리싱</div>,
-      url: "/projects/view/project05",
+      url: "/projects/view/project06",
     },
     {
       id: "7",
